@@ -1,5 +1,10 @@
 <?php
-echo "test";
+echo "Hello from PHP echo";
+echo "<br>";
+print "Hello from PHP print";
+echo "<br>";
+echo "echo : ", "Value one", " Value two", " Value three";
+// print "Value one", " Value two", " Value three"; // This will throw an error
 
 ?>
 
@@ -22,10 +27,12 @@ echo "test";
     <div class="container mx-auto p-4 mt-4">
         <div class="bg-white rounded-lg shadow-md p-6">
             <h2 class="text-2xl font-semibold mb-4"><?php echo 'Welcome to the course : This text is written with PHP'; ?></h2>
-            <h2 class="text-2xl font-semibold mb-4"><?='Welcome to the course : This text is written with PHP but with less syntax' ?></h2>
-            <p>In this course, you will learn the fundamentals of the PHP language</p>
+            <h2 class="text-2xl font-semibold mb-4"><?= 'Welcome to the course : This text is written with PHP but with less syntax' ?></h2>
+            <?php echo '<p>In this course, you will learn the fundamentals of the PHP language. This text is now encapsuled in an echo statement.</p>'; ?>
         </div>
     </div>
 </body>
 
-</html>
+
+
+</html />
